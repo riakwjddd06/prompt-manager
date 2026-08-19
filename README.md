@@ -114,5 +114,8 @@ https://github.com/riakwjddd06/prompt-manager
 
 본 과제에서는 필수 요구사항(CLI 환경 구축, Git 버전 관리 로직 체득, 커밋 10회 분할, 브랜치 병합 등)을 성공적으로 완료한 후, 프로그램의 실용성을 높이기 위해 **보너스 과제 1(프롬프트 영속화)**을 추가로 수행했다.
 
+<img width="688" height="258" alt="스크린샷 2026-08-19 오후 11 46 50" src="https://github.com/user-attachments/assets/43956f59-c8cc-46bb-8e9b-2de802656805" />
+<img width="598" height="290" alt="스크린샷 2026-08-20 오전 12 12 31" src="https://github.com/user-attachments/assets/c346efca-9d81-4dea-ad89-160c46a29645" />
+
 * **데이터 영속화(JSON) 로직 적용:** 파이썬 내장 `json` 및 `os` 모듈을 활용하여 프롬프트 데이터를 `prompts.json` 파일로 입출력(Load/Save)하는 로직을 구현헸다.
 * **성과:** 기존 메모리 휘발성 데이터 처리 방식의 한계를 극복함. 새로운 프롬프트를 추가하거나 즐겨찾기 상태를 변경할 때마다 파일에 실시간으로 기록(Dump)되도록 개선하여, 프로그램을 완전히 종료 후 재실행하더라도 사용자의 데이터가 영구적으로 보존되게 만들었다.
