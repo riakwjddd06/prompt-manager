@@ -194,7 +194,7 @@ while True:
     elif choice == '4': show_detail()
     elif choice == '5': toggle_favorite()
     elif choice == '6': show_category()
-print("hello")
+
 ```
 
 ---
