@@ -73,7 +73,7 @@ while True:
     choice = input("선택: ")
     
     if choice == '0':
-        print("종료합니다.")
+        print("프로그램을 종료합니다.")
         break
     elif choice == '1': add_prompt()
     elif choice == '2': show_list()
