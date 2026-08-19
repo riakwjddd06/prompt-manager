@@ -11,6 +11,7 @@ def show_menu():
     
 def add_prompt():
     print("\n[새 프롬프트 추가]")
+    print("-" * 30)
     new_title = input("제목을 입력하세요: ")
     new_content = input("내용을 입력하세요: ")
     new_category = input("카테고리(텍스트 생성/이미지 생성 등): ")
