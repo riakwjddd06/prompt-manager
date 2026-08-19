@@ -85,7 +85,7 @@
 
 
 
-# 기본 프롬프트 3개 세팅
+'# 기본 프롬프트 3개 세팅
 import json
 import os
 
@@ -190,7 +190,7 @@ while True:
     elif choice == '3': search_prompt()
     elif choice == '4': show_detail()
     elif choice == '5': toggle_favorite()
-    elif choice == '6': show_category()
+    elif choice == '6': show_category()'
     
 
 ---
