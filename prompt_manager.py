@@ -1,9 +1,27 @@
 # 기본 프롬프트 3개 세팅
-prompts = [
-    {"title": "사실적인 흑백 사진", "content": "레퍼런스 이미지를 똑같이 베끼지 말고, 일러스트 느낌 없이 완전히 사실적인 흑백 사진 스타일로 독창적인 구도를 만들어 줘.", "category": "이미지 생성", "favorite": True},
-    {"title": "객관적인 도서 추천", "content": "이전 대화 맥락은 무시하고, 쇼펜하우어 관련 도서들을 아주 객관적인 시각에서 추천해 줘.", "category": "텍스트 생성", "favorite": False},
-    {"title": "자원봉사 자소서 수정", "content": "대구국제뮤지컬페스티벌 자원봉사 지원서 초안이야. 과장된 칭찬이나 미사여구는 전부 빼고, 내 경험 위주로 건조하고 사실적으로 수정해 줘.", "category": "텍스트 생성", "favorite": False}
-]
+import json
+import os
+
+FILE_NAME = "prompts.json"
+
+# 파일에서 프롬프트 불러오기
+def load_prompts():
+    if os.path.exists(FILE_NAME):
+        with open(FILE_NAME, "r", encoding="utf-8") as f:
+            return json.load(f)
+    else:
+        return [
+            {"title": "사실적인 흑백 사진", "content": "레퍼런스 이미지를 똑같이 베끼지 말고, 일러스트 느낌 없이 완전히 사실적인 흑백 사진 스타일로 독창적인 구도를 만들어 줘.", "category": "이미지 생성", "favorite": True},
+            {"title": "객관적인 도서 추천", "content": "이전 대화 맥락은 무시하고, 쇼펜하우어 관련 도서들을 아주 객관적인 시각에서 추천해 줘.", "category": "텍스트 생성", "favorite": False},
+            {"title": "자원봉사 자소서 수정", "content": "대구국제뮤지컬페스티벌 자원봉사 지원서 초안이야. 과장된 칭찬이나 미사여구는 전부 빼고, 내 경험 위주로 건조하고 사실적으로 수정해 줘.", "category": "텍스트 생성", "favorite": False}
+        ]
+
+prompts = load_prompts()
+
+# 파일에 프롬프트 진짜로 저장하기
+def save_prompts():
+    with open(FILE_NAME, "w", encoding="utf-8") as f:
+        json.dump(prompts, f, ensure_ascii=False, indent=4)
 
 def show_menu():
     print("\n=== 나만의 프롬프트 관리 ===")
@@ -23,7 +41,9 @@ def add_prompt():
         "favorite": False
     }
     prompts.append(new_item)
+    save_prompts()
     print("✨ 성공적으로 추가됐어!")
+    
 
 def show_list():
     print("\n[전체 프롬프트 목록]")
@@ -55,6 +75,7 @@ def toggle_favorite():
     num = input("\n즐겨찾기 바꿀 번호 입력: ")
     idx = int(num) - 1
     prompts[idx]['favorite'] = not prompts[idx]['favorite']
+    save_prompts()
     print("즐겨찾기 상태가 바뀌었어!")
     
 def show_category():
