@@ -88,8 +88,20 @@
 
 1. **GitHub 저장소 URL:** 작성된 코드와 10개 이상의 커밋 이력이 담긴 원격 리포지토리 링크.
 2. **개발 환경 스크린샷:** VSCode 에디터 설정, Python 3.10 이상 버전 및 Git 초기 세팅 확인 화면.
+<img width="1191" height="795" alt="스크린샷 2026-08-19 오후 11 55 10" src="https://github.com/user-attachments/assets/e42ea88b-ad72-403a-8c0f-06445f14b0f5" />
+
 3. **실행 결과 스크린샷:** 메뉴 출력, 데이터 추가, 목록 출력, 검색 기능이 터미널에서 정상적으로 작동하는 화면.
+<img width="688" height="258" alt="스크린샷 2026-08-19 오후 11 46 50" src="https://github.com/user-attachments/assets/92d35389-84e9-4a42-bfeb-87dba7f64d8b" />
+<img width="688" height="228" alt="스크린샷 2026-08-19 오후 11 47 02" src="https://github.com/user-attachments/assets/d3ac5a4b-21f6-4c62-a8f4-44692a501179" />
+<img width="688" height="198" alt="스크린샷 2026-08-19 오후 11 47 19" src="https://github.com/user-attachments/assets/f54ce218-0386-4d6d-86c1-2b4dd72d987d" />
+<img width="688" height="306" alt="스크린샷 2026-08-19 오후 11 47 36" src="https://github.com/user-attachments/assets/7d745258-2fd9-45dc-8480-9ad9a995ef16" />
+<img width="688" height="513" alt="스크린샷 2026-08-19 오후 11 48 16" src="https://github.com/user-attachments/assets/7815b909-3520-43b5-9689-1e89f7dea115" />
+<img width="688" height="227" alt="스크린샷 2026-08-19 오후 11 48 39" src="https://github.com/user-attachments/assets/1a7d4c29-611c-4dc8-8f92-69c033662a1a" />
+<img width="688" height="163" alt="스크린샷 2026-08-19 오후 11 48 52" src="https://github.com/user-attachments/assets/4aa6b5cf-db3a-4de5-bc8c-9f7ac8bf14db" />
+
 4. **Git Log 스크린샷:** `git log --oneline --graph` 명령어로 터미널에 출력된 브랜치 분기/병합 선과 12개의 커밋 트리 화면.
+<img width="688" height="354" alt="스크린샷 2026-08-19 오후 11 52 26" src="https://github.com/user-attachments/assets/28837328-d65a-4faa-b617-9a61cf524de1" />
+
 
 ---
 
