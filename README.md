@@ -3,4 +3,5 @@
 
 ## 실행 방법
 터미널에서 아래 명령어를 입력하세요.
-`python3 prompt_manager.py`
+`python3 prompt_manager.py`git add README.md
+- 자주 쓰는 프롬프트를 저장해보세요.
