@@ -68,7 +68,7 @@ def show_category():
         print("해당 카테고리에 프롬프트가 없어.")
 # 메인 엔진 시작
 while True:
-    print("\n=== 나만의 프롬프트 관리 ===")
+    print("\n=== 🍎 나만의 프롬프트 매니저 ===")
     print("1. 추가\n2. 목록\n3. 검색\n4. 상세\n5. 즐겨찾기\n6. 카테고리 조회\n0. 종료")
     choice = input("선택: ")
     
