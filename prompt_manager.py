@@ -54,10 +54,22 @@ def toggle_favorite():
     idx = int(num) - 1
     prompts[idx]['favorite'] = not prompts[idx]['favorite']
     print("즐겨찾기 상태가 바뀌었어!")
+    
+def show_category():
+    print("\n[카테고리별 조회]")
+    cat = input("조회할 카테고리 입력(예: 텍스트 생성): ")
+    found = False
+    for p in prompts:
+        if p['category'] == cat:
+            star = "⭐" if p["favorite"] else "  "
+            print(f"- {star} {p['title']}")
+            found = True
+    if not found:
+        print("해당 카테고리에 프롬프트가 없어.")
 
 while True:
     print("\n=== 나만의 프롬프트 관리 ===")
-    print("1. 프롬프트 추가\n2. 프롬프트 목록\n3. 프롬프트 검색\n4. 상세 보기\n5. 즐겨찾기 설정\n0. 종료")
+    print("1. 추가\n2. 목록\n3. 검색\n4. 상세\n5. 즐겨찾기\n6. 카테고리 조회\n0. 종료")
     choice = input("선택: ")
     
     if choice == '0':
@@ -68,3 +80,5 @@ while True:
     elif choice == '3': search_prompt()
     elif choice == '4': show_detail()
     elif choice == '5': toggle_favorite()
+    elif choice == '6': show_category()
+    
