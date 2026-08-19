@@ -28,15 +28,43 @@ def show_list():
     for i, p in enumerate(prompts):
         star = "⭐" if p["favorite"] else "  "
         print(f"{i+1}번 {star} | 제목: {p['title']} | 카테고리: {p['category']}")
+def search_prompt():
+    print("\n[프롬프트 검색]")
+    keyword = input("검색할 단어를 입력하세요: ")
+    found = False
+    for p in prompts:
+        if keyword in p['title'] or keyword in p['content']:
+            print(f"- {p['title']} ({p['category']})")
+            found = True
+    if not found:
+        print("검색 결과가 없어.")
 
+def show_detail():
+    show_list()
+    num = input("\n자세히 볼 번호 입력: ")
+    idx = int(num) - 1
+    p = prompts[idx]
+    print(f"\n[상세 보기] {p['title']}")
+    print(f"카테고리: {p['category']} | 즐겨찾기: {'⭐' if p['favorite'] else '❌'}")
+    print(f"내용: {p['content']}")
+
+def toggle_favorite():
+    show_list()
+    num = input("\n즐겨찾기 바꿀 번호 입력: ")
+    idx = int(num) - 1
+    prompts[idx]['favorite'] = not prompts[idx]['favorite']
+    print("즐겨찾기 상태가 바뀌었어!")
 
 while True:
-    show_menu()
+    print("\n=== 나만의 프롬프트 관리 ===")
+    print("1. 프롬프트 추가\n2. 프롬프트 목록\n3. 프롬프트 검색\n4. 상세 보기\n5. 즐겨찾기 설정\n0. 종료")
     choice = input("선택: ")
+    
     if choice == '0':
         print("종료합니다.")
         break
-    elif choice == '1':
-        add_prompt()  
-    elif choice == '2':
-        show_list()   
+    elif choice == '1': add_prompt()
+    elif choice == '2': show_list()
+    elif choice == '3': search_prompt()
+    elif choice == '4': show_detail()
+    elif choice == '5': toggle_favorite()
