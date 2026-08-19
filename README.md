@@ -83,6 +83,8 @@
 * **메인 루프 엔진 (`while True:`):** 
   프로그램이 한 번 실행되고 꺼지지 않도록 무한 루프를 돌린다. `choice = input()`으로 받은 값에 따라 `if-elif`문으로 분기시켜 각 함수를 호출하며, '0'이 입력되면 `break`로 루프를 탈출해 프로그램을 완전히 종료한다.
 
+
+```python
 # 기본 프롬프트 3개 세팅
 import json
 import os
@@ -192,6 +194,9 @@ while True:
     elif choice == '4': show_detail()
     elif choice == '5': toggle_favorite()
     elif choice == '6': show_category()
+print("hello")
+
+
 ---
 
 ## 4. 최종 제출물 내역
