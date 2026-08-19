@@ -10,6 +10,9 @@
 
 ## 2. 미션 수행 과정 및 트러블슈팅 내역
 
+모든 과정은 GOOGLE Gemini 3.1 pro의 도움을 받아 수행함.
+대화 로그: https://share.gemini.google/O4fp6xtahXRP
+
 본 항목은 개발 환경 구축부터 GitHub 원격 저장소 연동까지의 단계별 수행 과정 및 주요 오류 해결(Troubleshooting) 내역을 정리함.
 
 ### STEP 1. 개발 환경 세팅 및 작업 폴더 생성
@@ -196,15 +199,32 @@ while True:
 본 프로젝트 완성을 증명하는 산출물 목록이다.
 
 1. **GitHub 저장소 URL:** 작성된 코드와 10개 이상의 커밋 이력이 담긴 원격 리포지토리 링크.
+https://github.com/riakwjddd06/prompt-manager
+
 2. **개발 환경 스크린샷:** VSCode 에디터 설정, Python 3.10 이상 버전 및 Git 초기 세팅 확인 화면.
+<img width="1191" height="795" alt="스크린샷 2026-08-20 오전 12 08 46" src="https://github.com/user-attachments/assets/214345c2-3c60-44a2-aea5-f8b9602ade7f" />
+
 3. **실행 결과 스크린샷:** 메뉴 출력, 데이터 추가, 목록 출력, 검색 기능이 터미널에서 정상적으로 작동하는 화면.
+<img width="688" height="258" alt="스크린샷 2026-08-19 오후 11 46 50" src="https://github.com/user-attachments/assets/92d35389-84e9-4a42-bfeb-87dba7f64d8b" />
+<img width="688" height="228" alt="스크린샷 2026-08-19 오후 11 47 02" src="https://github.com/user-attachments/assets/d3ac5a4b-21f6-4c62-a8f4-44692a501179" />
+<img width="688" height="198" alt="스크린샷 2026-08-19 오후 11 47 19" src="https://github.com/user-attachments/assets/f54ce218-0386-4d6d-86c1-2b4dd72d987d" />
+<img width="688" height="306" alt="스크린샷 2026-08-19 오후 11 47 36" src="https://github.com/user-attachments/assets/7d745258-2fd9-45dc-8480-9ad9a995ef16" />
+<img width="688" height="513" alt="스크린샷 2026-08-19 오후 11 48 16" src="https://github.com/user-attachments/assets/7815b909-3520-43b5-9689-1e89f7dea115" />
+<img width="688" height="227" alt="스크린샷 2026-08-19 오후 11 48 39" src="https://github.com/user-attachments/assets/1a7d4c29-611c-4dc8-8f92-69c033662a1a" />
+<img width="688" height="163" alt="스크린샷 2026-08-19 오후 11 48 52" src="https://github.com/user-attachments/assets/4aa6b5cf-db3a-4de5-bc8c-9f7ac8bf14db" />
+
 4. **Git Log 스크린샷:** `git log --oneline --graph` 명령어로 터미널에 출력된 브랜치 분기/병합 선과 12개의 커밋 트리 화면.
+<img width="688" height="354" alt="스크린샷 2026-08-19 오후 11 52 26" src="https://github.com/user-attachments/assets/28837328-d65a-4faa-b617-9a61cf524de1" />
+
 
 ---
 
 ## 5. 보너스 과제 수행 내역
 
 본 과제에서는 필수 요구사항(CLI 환경 구축, Git 버전 관리 로직 체득, 커밋 10회 분할, 브랜치 병합 등)을 성공적으로 완료한 후, 프로그램의 실용성을 높이기 위해 **보너스 과제 1(프롬프트 영속화)**을 추가로 수행했다.
+
+<img width="688" height="258" alt="스크린샷 2026-08-19 오후 11 46 50" src="https://github.com/user-attachments/assets/43956f59-c8cc-46bb-8e9b-2de802656805" />
+<img width="598" height="290" alt="스크린샷 2026-08-20 오전 12 12 31" src="https://github.com/user-attachments/assets/c346efca-9d81-4dea-ad89-160c46a29645" />
 
 * **데이터 영속화(JSON) 로직 적용:** 파이썬 내장 `json` 및 `os` 모듈을 활용하여 프롬프트 데이터를 `prompts.json` 파일로 입출력(Load/Save)하는 로직을 구현헸다.
 * **성과:** 기존 메모리 휘발성 데이터 처리 방식의 한계를 극복함. 새로운 프롬프트를 추가하거나 즐겨찾기 상태를 변경할 때마다 파일에 실시간으로 기록(Dump)되도록 개선하여, 프로그램을 완전히 종료 후 재실행하더라도 사용자의 데이터가 영구적으로 보존되게 만들었다.
