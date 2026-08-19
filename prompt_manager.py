@@ -40,7 +40,7 @@ def search_prompt():
             found = True
     if not found:
         print("검색 결과가 없어.")
-
+# 제목과 내용에서 동시에 키워드 검색
 def show_detail():
     show_list()
     num = input("\n자세히 볼 번호 입력: ")
