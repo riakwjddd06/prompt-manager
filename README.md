@@ -255,7 +255,7 @@ while True:
 <img width="688" height="227" alt="스크린샷 2026-08-19 오후 11 48 39" src="https://github.com/user-attachments/assets/1a7d4c29-611c-4dc8-8f92-69c033662a1a" />
 <img width="688" height="163" alt="스크린샷 2026-08-19 오후 11 48 52" src="https://github.com/user-attachments/assets/4aa6b5cf-db3a-4de5-bc8c-9f7ac8bf14db" />
 
-4. **Git Log 스크린샷:** `git log --oneline --graph` 명령어로 터미널에 출력된 브랜치 분기/병합 선과 커밋 트리 화면.
+4. **Git Log 스크린샷:** `git log --oneline --graph` 명령어로 터미널에 출력된 브랜치 분기/병합 선과 10개 이상의 커밋 트리 화면.
 <img width="685" height="635" alt="스크린샷 2026-08-20 오전 1 01 53" src="https://github.com/user-attachments/assets/736fa046-477a-4498-8ba0-7f10591941e2" />
 
 
