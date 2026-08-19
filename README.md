@@ -10,6 +10,9 @@
 
 ## 2. 미션 수행 과정 및 트러블슈팅 내역
 
+모든 과정은 GOOGLE Gemini 3.1 pro의 도움을 받아 수행함.
+대화 로그: https://share.gemini.google/O4fp6xtahXRP
+
 본 항목은 개발 환경 구축부터 GitHub 원격 저장소 연동까지의 단계별 수행 과정 및 주요 오류 해결(Troubleshooting) 내역을 정리함.
 
 ### STEP 1. 개발 환경 세팅 및 작업 폴더 생성
