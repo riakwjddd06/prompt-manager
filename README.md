@@ -48,7 +48,7 @@
 ## 3. 미션 수행 과정 및 트러블슈팅 내역
 
 모든 과정은 GOOGLE Gemini 3.1 pro의 도움을 받아 수행함.
-대화 로그: https://share.gemini.google/O4fp6xtahXRP
+* 대화 로그: https://share.gemini.google/O4fp6xtahXRP
 
 본 항목은 개발 환경 구축부터 GitHub 원격 저장소 연동까지의 단계별 수행 과정 및 주요 오류 해결(Troubleshooting) 내역을 정리함.
 
@@ -231,7 +231,7 @@ while True:
     elif choice == '4': show_detail()
     elif choice == '5': toggle_favorite()
     elif choice == '6': show_category()
-print("hello")
+
 ```
 
 ---
@@ -241,7 +241,7 @@ print("hello")
 본 프로젝트 완성을 증명하는 산출물 목록이다.
 
 1. **GitHub 저장소 URL:** 작성된 코드와 10개 이상의 커밋 이력이 담긴 원격 리포지토리 링크.
-https://github.com/riakwjddd06/prompt-manager
+* https://github.com/riakwjddd06/prompt-manager
 
 2. **개발 환경 스크린샷:** VSCode 에디터 설정, Python 3.10 이상 버전 및 Git 초기 세팅 확인 화면.
 <img width="1191" height="795" alt="스크린샷 2026-08-20 오전 12 08 46" src="https://github.com/user-attachments/assets/214345c2-3c60-44a2-aea5-f8b9602ade7f" />
