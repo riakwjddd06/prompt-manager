@@ -93,7 +93,7 @@
 https://github.com/riakwjddd06/prompt-manager
 
 2. **개발 환경 스크린샷:** VSCode 에디터 설정, Python 3.10 이상 버전 및 Git 초기 세팅 확인 화면.
-<img width="1191" height="795" alt="스크린샷 2026-08-19 오후 11 55 10" src="https://github.com/user-attachments/assets/e42ea88b-ad72-403a-8c0f-06445f14b0f5" />
+<img width="1191" height="795" alt="스크린샷 2026-08-20 오전 12 08 46" src="https://github.com/user-attachments/assets/214345c2-3c60-44a2-aea5-f8b9602ade7f" />
 
 3. **실행 결과 스크린샷:** 메뉴 출력, 데이터 추가, 목록 출력, 검색 기능이 터미널에서 정상적으로 작동하는 화면.
 <img width="688" height="258" alt="스크린샷 2026-08-19 오후 11 46 50" src="https://github.com/user-attachments/assets/92d35389-84e9-4a42-bfeb-87dba7f64d8b" />
